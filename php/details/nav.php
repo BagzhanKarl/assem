@@ -68,7 +68,7 @@ $user = R::findOne('user', 'id = ?', [$_SESSION['logged_user']]);
                     </a>
                 </li>
                 <li class="pc-item">
-                    <a href="./dashboard/deals.php" class="pc-link">
+                    <a href="/business/new-emlpoyes.php" class="pc-link">
                         <span class="pc-micon">
                           <i class="ph-duotone ph-folder-simple-user"></i>
                         </span>

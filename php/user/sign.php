@@ -28,6 +28,9 @@ if (isset($data['signStart'])) {
     $user->password = password_hash($data['password'], PASSWORD_DEFAULT);
     $user->create_at = time();
     $user->update_at = time();
+    $user->is_active = 1;
+    $user->is_verify = 0;
+    $user->is_superuser = 0;
 
     try {
         R::store($user);
