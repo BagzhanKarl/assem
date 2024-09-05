@@ -21,7 +21,7 @@
                             </div>
                             <div class="col-4">
                                 <div class="d-grid">
-                                    <button class="preset-btn btn" data-value="false" onclick="layout_change('dark');">
+                                    <button class="preset-btn btn active" data-value="false" onclick="layout_change('dark');">
                                         <span class="btn-label">Темный</span>
                                         <span class="pc-lay-icon"><span></span><span></span><span></span><span></span></span>
                                     </button>
@@ -36,28 +36,6 @@
                                         </span>
                                     </button>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <h6 class="mb-1">Тема боковой панели</h6>
-                    <p class="text-muted text-sm">Выберите тему боковой панели</p>
-                    <div class="row theme-color theme-sidebar-color">
-                        <div class="col-6">
-                            <div class="d-grid">
-                                <button class="preset-btn btn" data-value="true" onclick="layout_sidebar_change('dark');">
-                                    <span class="btn-label">Темная</span>
-                                    <span class="pc-lay-icon"><span></span><span></span><span></span><span></span></span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-grid">
-                                <button class="preset-btn btn active" data-value="false" onclick="layout_sidebar_change('light');">
-                                    <span class="btn-label">Светлая</span>
-                                    <span class="pc-lay-icon"><span></span><span></span><span></span><span></span></span>
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -87,3 +65,16 @@
         </div>
     </div>
 </div>
+
+<script>
+    layout_change('dark');
+</script>
+
+<script>
+    layout_sidebar_change('dark');
+</script>
+
+<script>
+    preset_change('preset-1');
+</script>
+

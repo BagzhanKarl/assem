@@ -1,7 +1,6 @@
 ﻿<?php
 require "../php/db.php";
 checkAuth();
-
 ?>
 <!doctype html>
 <html lang="en">

@@ -63,7 +63,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control mob_no" id="phone" data-mask="+7 999 999-99-99"  placeholder="+7 ">
+                        <input type="text" class="form-control mob_no" id="phone" data-mask="+7 999 999-99-99" value="+7" placeholder="+7 ">
                         <div class="form-text">Этот телефон станет вашим логином</div>
                     </div>
                     <div class="mb-3">

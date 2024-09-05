@@ -75,6 +75,10 @@ $businesstype = R::findAll('businesstype');
                         </select>
                     </div>
                     <div class="mb-3">
+                        <label for="">Каком городе находитесь</label>
+                        <input type="text" id="city" class="form-control">
+                    </div>
+                    <div class="mb-3">
                         <label for="">Сколько сотрудников работает в компании?</label>
                         <select id="employes" class="form-control">
                             <option value="1">1</option>
@@ -164,6 +168,7 @@ $businesstype = R::findAll('businesstype');
         let types = $('#types').val();
         let areas = $('#areas').val();
         let employes = $('#employes').val();
+        let city = $('#city').val();
 
         $.ajax({
             url: '../php/user/sign.php',
@@ -173,6 +178,7 @@ $businesstype = R::findAll('businesstype');
                 types: types,
                 areas: areas,
                 employes: employes,
+                city: city,
             },
             dataType: 'json',
             success: function(response){

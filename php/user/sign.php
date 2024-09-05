@@ -57,6 +57,7 @@ if(isset($data['signSecond'])){
     $user->role = $data['role'];
     $user->company = $company->id;
     $user->update_at = time();
+    $company->follow = 'new';
     R::store($user);
     try {
         echo json_encode(['status' => 2001, 'data' => 'true']);
@@ -70,6 +71,7 @@ if(isset($data['laststep'])){
     $company = R::findOne('company', 'id = ?', [$user->company]);
     $company->type = $data['types'];
     $company->area = $data['areas'];
+    $company->city = $data['city'];
     $company->employ = $data['employes'];
     $company->update_at = time();
     R::store($company);

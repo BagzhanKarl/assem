@@ -68,28 +68,46 @@ $user = R::findOne('user', 'id = ?', [$_SESSION['logged_user']]);
                     </a>
                 </li>
                 <li class="pc-item">
-                    <a href="/business/new-emlpoyes.php" class="pc-link">
+                    <a href="/business/masters.php" class="pc-link">
                         <span class="pc-micon">
                           <i class="ph-duotone ph-folder-simple-user"></i>
                         </span>
                         <span class="pc-mtext">Сотрудники</span>
                     </a>
                 </li>
-                <li class="pc-item">
-                    <a href="./dashboard/deals.php" class="pc-link">
+                <li class="pc-item pc-hasmenu">
+                    <a href="#!" class="pc-link">
                         <span class="pc-micon">
-                          <i class="ph-duotone ph-clipboard-text"></i>
+                            <i class="ph-duotone ph-clipboard-text"></i>
                         </span>
                         <span class="pc-mtext">Услуги</span>
-                    </a>
-                </li>
-                <li class="pc-item">
-                    <a href="./dashboard/deals.php" class="pc-link">
-                        <span class="pc-micon">
-                          <i class="ph-duotone ph-globe"></i>
+                        <span class="pc-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
                         </span>
-                        <span class="pc-mtext">Настроики сайта</span>
                     </a>
+                    <ul class="pc-submenu" style="display: none;">
+                        <li class="pc-item"><a class="pc-link" href="../demo/layout-horizontal.html">Категорий</a></li>
+                        <li class="pc-item"><a class="pc-link" href="/business/new-site-settings.php">Услуги</a></li>
+                    </ul>
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a href="#!" class="pc-link">
+                        <span class="pc-micon">
+                            <i class="ph-duotone ph-globe"></i>
+                        </span>
+                        <span class="pc-mtext">Онлайн запись</span>
+                        <span class="pc-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="pc-submenu" style="display: none;">
+                        <li class="pc-item"><a class="pc-link" href="/business/links.php">Ссылки</a></li>
+                        <li class="pc-item"><a class="pc-link" href="/business/site-settings.php">Настройки</a></li>
+                    </ul>
                 </li>
 
                 <li class="pc-item pc-caption">

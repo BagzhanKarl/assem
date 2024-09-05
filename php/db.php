@@ -1,6 +1,6 @@
 <?php
 require "db/rb-mysql.php";
-R::setup( 'mysql:host=192.168.1.105;dbname=assem',
+R::setup( 'mysql:host=192.168.1.108;dbname=assem',
     'root', '' );
 session_start();
 
